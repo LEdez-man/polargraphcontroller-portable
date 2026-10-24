@@ -1,8 +1,26 @@
-# Polargraph Controller portable 0.1.0
+# Polargraph Controller portable 0.1.1
 
-First release: Polargraph Controller 2.4.2 (upstream release 2017-11-01) as a portable package for
-64-bit Windows, startable straight from the unpacked folder. No Java installation and no Processing
-IDE are needed.
+Polargraph Controller 2.4.2 (upstream release 2017-11-01) as a portable package for 64-bit Windows,
+startable straight from the unpacked folder. No Java installation and no Processing IDE are needed.
+
+## New in 0.1.1
+
+Documentation only; the controller, the launchers and the Java runtime work as in 0.1.0.
+
+- **Guide for dummies** in German, English, French and Spanish (`docs\dummies\`), written for
+  teachers, parents and anyone drawing with children: putting the firmware on the Arduino, starting
+  the program, setting up the machine, the first drawing, safety tips, a troubleshooting table and a
+  small glossary. Button and status texts are exactly the ones shown in the controller.
+- **Firmware guide** (`docs\firmware.md`): which firmware for which hardware, the switch for Adafruit
+  Motor Shield v2, the precompiled hex files and how to check the connection. All three firmware
+  variants compile unchanged with Arduino IDE 1.8.9.
+
+Already using 0.1.0? Nothing needs to change; the guides are also available online in the
+repository.
+
+---
+
+*The following sections describe the package as introduced in 0.1.0.*
 
 ## The problem
 

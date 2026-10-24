@@ -7,6 +7,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.1] – 2026-10-24
+
 ### Added
 
 - Guide for dummies in German, English, French and Spanish (`docs/dummies/`), written for teachers
@@ -39,5 +41,6 @@ All notable changes to this project are documented here. The format follows
 - File paths from their authors' computers in the upstream example profiles (`controller.image.filename`,
   `controller.vector.filename`).
 
-[Unreleased]: https://github.com/LEdez-man/polargraphcontroller-portable/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/LEdez-man/polargraphcontroller-portable/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/LEdez-man/polargraphcontroller-portable/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/LEdez-man/polargraphcontroller-portable/releases/tag/v0.1.0
