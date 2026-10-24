@@ -7,6 +7,7 @@
 | `launchers\` | Batch files copied into the package root |
 | `scripts\build-package.ps1` | Builds the package and the release zip |
 | `docs\` | Documentation, also copied into the package |
+| `docs\dummies\` | Beginner guide in German, English, French and Spanish; keep the four versions in sync |
 | `.github\workflows\build.yml` | CI build; attaches the zip to releases |
 
 Build output goes to `build\` (downloads, temporary files) and `dist\` (package and zip). Both are

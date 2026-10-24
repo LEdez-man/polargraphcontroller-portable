@@ -7,6 +7,13 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Guide for dummies in German, English, French and Spanish (`docs/dummies/`), written for teachers
+  and anyone drawing with children: firmware upload, first drawing, safety tips, glossary.
+- `docs/firmware.md`: which firmware for which hardware, Motor Shield v2 switch, precompiled hex
+  files, connection check. All three firmware variants compile unchanged with Arduino IDE 1.8.9.
+
 ## [0.1.0] – 2026-10-24
 
 ### Added

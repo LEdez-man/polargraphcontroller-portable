@@ -4,6 +4,12 @@ Runs [Polargraph Controller 2.4.2](https://github.com/euphy/polargraphcontroller
 current 64-bit Windows **without installing Java and without the Processing IDE**. The package brings
 its own Java runtime, so updating or removing the system Java no longer breaks the controller.
 
+> **New to Polargraph? Guide for dummies, step by step:**
+> [Deutsch](docs/dummies/de.md) · [English](docs/dummies/en.md) · [Français](docs/dummies/fr.md) · [Español](docs/dummies/es.md)
+>
+> Written for teachers, parents and anyone who wants to draw with a Polargraph machine, for
+> example with children, without prior knowledge.
+
 This is an unofficial companion project. The controller itself is unchanged: the package uses the
 original binaries of the upstream release
 [2017-11-01-20-30](https://github.com/euphy/polargraphcontroller/releases/tag/2017-11-01-20-30)
@@ -31,7 +37,8 @@ Error messages and fixes: [docs/troubleshooting.md](docs/troubleshooting.md).
 1. Download `Polargraph-portable-win64-<version>.zip` from the [Releases](../../releases) page.
 2. Unzip it anywhere, for example to a USB stick. The path may contain spaces.
 3. Double-click **`start-polargraph.cmd`**.
-4. Connect the machine and choose the port under **Serial port…**, as usual.
+4. Connect the machine and choose the port under **Serial port…**, as usual. The status line turns
+   green: `Polargraph READY!`. If not, see [docs/firmware.md](docs/firmware.md).
 
 If something does not work, use **`start-polargraph-console.cmd`**: it shows all log output and errors.
 
@@ -46,7 +53,7 @@ If something does not work, use **`start-polargraph-console.cmd`**: it shows all
 | `controller\` | Upstream Polargraph Controller 2.4.2, Windows 64-bit, unchanged |
 | `controller\jre\` | Java runtime: Eclipse Temurin 8 JRE, 64-bit |
 | `sketchbook\` | Source code of the controller and of the libraries it uses |
-| `docs\` | Troubleshooting, licensing, development notes |
+| `docs\` | Guide for dummies (4 languages), firmware, troubleshooting, licensing, development |
 | `BUILD-INFO.txt` | Exact versions in this package |
 
 ## Settings
@@ -91,12 +98,20 @@ described in [docs/development.md](docs/development.md).
 Releases are built by GitHub Actions ([.github/workflows/build.yml](.github/workflows/build.yml))
 when a tag `v*` is pushed. Binaries are attached to the release and never committed to the repository.
 
-## Firmware
+## Firmware (Arduino)
 
-The Arduino firmware is not part of this package. It is in the upstream release zip
-(`arduino-source\`) and in the upstream repositories
-[polargraph_server_a1](https://github.com/euphy/polargraph_server_a1) and
-[polargraph_server_polarshield](https://github.com/euphy/polargraph_server_polarshield).
+The machine's Arduino needs the Polargraph firmware. This is a one-time step; a machine that has
+drawn before already has it. The firmware is not part of this package; it is in the upstream
+release zip (`arduino-source\`).
+
+| Hardware | Firmware |
+|---|---|
+| Arduino Uno + Adafruit Motor Shield v1 or v2, stepper drivers, ULN2003 | `polargraph_server_a1` |
+| Arduino Mega 2560 + PolarShield, PolargraphSD | `polargraph_server_polarshield` |
+
+All three variants compile unchanged with Arduino IDE 1.8.9. Which file to open, which lines to
+change for Motor Shield v2, the precompiled hex files and how to check the connection:
+[docs/firmware.md](docs/firmware.md).
 
 ## Credits
 
