@@ -1,0 +1,9 @@
+* text=auto
+
+# Windows batch and PowerShell files need CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+*.md  text eol=lf
+*.yml text eol=lf

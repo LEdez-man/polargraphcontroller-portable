@@ -1,0 +1,23 @@
+# Build output and downloads
+/build/
+/dist/
+*.part
+
+# Binaries are attached to releases, never committed
+*.zip
+*.jar
+*.dll
+*.exe
+jre/
+processing-2.2.1/
+
+# Settings written by Polargraph Controller (personal machine setup and file paths)
+default.properties.txt
+launch4j.log
+
+# OS and editor files
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
