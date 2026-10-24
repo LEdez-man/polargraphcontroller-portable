@@ -86,4 +86,5 @@ The controller binaries are **unchanged**. The package only changes how they are
 
 - Windows 64-bit only. The upstream release also has Linux builds; they are not repackaged.
 - The serial port is stored as a position in the port list, not as a name (upstream behaviour).
-- Tested on Windows 10 (64-bit). Tests on Windows 11 and with more machines are welcome.
+- Tested on Windows 10 (64-bit) with a connected Polargraph machine. Tests on Windows 11 and with
+  more machines are welcome.

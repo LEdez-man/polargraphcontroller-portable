@@ -7,7 +7,7 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
-## [0.1.0] – unreleased
+## [0.1.0] – 2026-10-24
 
 ### Added
 
@@ -31,3 +31,6 @@ All notable changes to this project are documented here. The format follows
 - `default.properties.txt` is no longer shipped; the controller creates it on first start.
 - File paths from their authors' computers in the upstream example profiles (`controller.image.filename`,
   `controller.vector.filename`).
+
+[Unreleased]: https://github.com/LEdez-man/polargraphcontroller-portable/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/LEdez-man/polargraphcontroller-portable/releases/tag/v0.1.0
